@@ -1,0 +1,130 @@
+{
+	"info": {
+		"_postman_id": "a5b9dfdf-c5ef-4573-b45e-ae50ef09369a",
+		"name": "posts-render-week5",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "33251865"
+	},
+	"item": [
+		{
+			"name": "取得所有貼文",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://two024-week5-posts.onrender.com/posts",
+					"protocol": "https",
+					"host": [
+						"two024-week5-posts",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"posts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "新增一筆貼文",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"user\":\"662d190573a1c0a22fcf2534\",\r\n    \"content\":\"明晚要吃炒飯\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://two024-week5-posts.onrender.com/posts",
+					"protocol": "https",
+					"host": [
+						"two024-week5-posts",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"posts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "刪除一筆貼文",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://two024-week5-posts.onrender.com/posts/6637b3a4c6625db33b6cd3d6",
+					"protocol": "https",
+					"host": [
+						"two024-week5-posts",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"posts",
+						"6637b3a4c6625db33b6cd3d6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "刪除全部貼文",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://two024-week5-posts.onrender.com/posts",
+					"protocol": "https",
+					"host": [
+						"two024-week5-posts",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"posts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "更新一筆貼文",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"user\":\"662d190573a1c0a22fcf2534\",\r\n    \"content\":\"明晚吃水餃\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://two024-week5-posts.onrender.com/posts/6637b461c6625db33b6cd3e1",
+					"protocol": "https",
+					"host": [
+						"two024-week5-posts",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"posts",
+						"6637b461c6625db33b6cd3e1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
